@@ -1,4 +1,4 @@
-# Velvet-Theme
+# Velvet Theme
 A minimal blogging theme for [Baun](http://bauncms.com).
 
 * Fully responsive (uses Bootstrap)
