@@ -1,0 +1,121 @@
+/*
+Name: Velvet Theme
+Description: A minimal blogging theme for Baun
+Author: Gilbert Pellegrom (gilbert@pellegrom.me)
+*/
+
+/* Structure */
+html,
+body,
+.container-fluid,
+.row { height: 100%; }
+
+.sidebar { overflow: auto; }
+
+.sidebar-inner,
+.content {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.border-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	height: 5px;
+	background: #1abc9c;
+}
+
+@media (min-width: 768px) {
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 100;
+	}
+}
+@media (min-width: 992px) {
+	.sidebar-inner {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+/* Main */
+body {
+	font: 16px/1.6em 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #555;
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #333;
+}
+
+a, a:visited {
+	color: #1abc9c;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #555;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+	background: #2c3e50;
+	color: #ddd;
+	text-align: center;
+}
+.sidebar a { color: #fff; }
+.sidebar a:hover {
+	color: #1abc9c;
+	border: 0;
+}
+.sidebar ul {
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+}
+.sidebar li { margin-bottom: 5px; }
+
+.logo {
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.logo img { border-radius: 150px; }
+.sidebar .logo:hover { border: 0; }
+
+.tagline { margin-bottom: 40px; }
+
+.baun-nav-item-blog { display: none; }
+
+/* Posts */
+.post { margin-bottom: 60px; }
+.post.single { margin-bottom: 0; }
+
+.post-title { margin-bottom: 15px; }
+.post-title a { color: #333; }
+.post-title a:hover {
+	color: #1abc9c;
+	border: 0;
+}
+
+.post-meta {
+	font-style: italic;
+	color: #999;
+	margin-bottom: 20px;
+}
+
+#disqus_thread { margin-top: 50px; }
